@@ -20,7 +20,7 @@ my_dataframe = session.table("smoothies.public.fruit_options") .select(col('FRUI
 #st.stop()
 
 #convert the snowpark dataframes to pandas dataframe so we can use de LOC function
-pd_df=my_dataframe.pandas.to_pandas()
+pd_df = my_dataframe.to_pandas()
 st.dataframe(pd_df)
 st.stop()
 
